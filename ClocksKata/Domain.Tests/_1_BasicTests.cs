@@ -1,5 +1,3 @@
-using FluentAssertions;
-
 namespace Domain.Tests;
 
 public class _1_BasicTests
@@ -17,7 +15,7 @@ public class _1_BasicTests
     [InlineData("8", "8")]
     [InlineData("9", "Foo")]
     [InlineData("10", "Bar")]
-    public void _1_1_a(string input, string output)
+    public void _1(string input, string output)
     {
         var result = _nonSenseService.Compute(input);
         result.Should().NotBeNull();
